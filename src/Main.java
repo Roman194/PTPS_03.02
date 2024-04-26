@@ -32,7 +32,7 @@ public class Main {
         }
     }
 
-    public static  int bracketsCombine(int sequenceDepth, int externalBrackets, int allPreviousBracketsCount, int previousOneInternalBrackets, int maxDividedCase){//3 3 1 4
+    public static  int bracketsCombine(int sequenceDepth, int externalBrackets, int allPreviousBracketsCount, int previousOneInternalBrackets, int maxDividedCase){
 
         int rightSequencesCount = 0;
         int internalBrackets = 0;
@@ -71,7 +71,7 @@ public class Main {
                         //System.out.println("Hey");
                         rightSequencesCount+= bracketsCombine(sequenceDepth, currExternalBrackets - 1, allPreviousBracketsCount + 1, internalBrackets, maxDividedCase);
                     }else{
-                        rightSequencesCount += (allPreviousBracketsCount + currExternalBrackets);//5 6 7
+                        rightSequencesCount += (allPreviousBracketsCount + currExternalBrackets);
                         //System.out.println(allPreviousBracketsCount);
                     }
                 }
